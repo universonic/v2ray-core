@@ -30,6 +30,7 @@ var (
 		"vless":         func() interface{} { return new(VLessInboundConfig) },
 		"vmess":         func() interface{} { return new(VMessInboundConfig) },
 		"trojan":        func() interface{} { return new(TrojanServerConfig) },
+		"vliteu":        func() interface{} { return new(VliteuServerConfig) },
 	}, "protocol", "settings")
 
 	outboundConfigLoader = loader.NewJSONConfigLoader(loader.ConfigCreatorCache{
@@ -41,6 +42,7 @@ var (
 		"vless":       func() interface{} { return new(VLessOutboundConfig) },
 		"vmess":       func() interface{} { return new(VMessOutboundConfig) },
 		"trojan":      func() interface{} { return new(TrojanClientConfig) },
+		"vliteu":      func() interface{} { return new(VliteuClientConfig) },
 		"dns":         func() interface{} { return new(DNSOutboundConfig) },
 		"loopback":    func() interface{} { return new(LoopbackConfig) },
 	}, "protocol", "settings")
