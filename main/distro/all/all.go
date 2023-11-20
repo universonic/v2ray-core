@@ -34,6 +34,7 @@ import (
 	_ "github.com/v2fly/v2ray-core/v5/app/instman"
 	_ "github.com/v2fly/v2ray-core/v5/app/observatory"
 	_ "github.com/v2fly/v2ray-core/v5/app/restfulapi"
+	_ "github.com/v2fly/v2ray-core/v5/app/tun"
 
 	// Inbound and outbound proxies.
 	_ "github.com/v2fly/v2ray-core/v5/proxy/blackhole"
@@ -52,6 +53,8 @@ import (
 	// Developer preview proxies
 	_ "github.com/v2fly/v2ray-core/v5/proxy/vlite/inbound"
 	_ "github.com/v2fly/v2ray-core/v5/proxy/vlite/outbound"
+
+	_ "github.com/v2fly/v2ray-core/v5/proxy/shadowsocks2022"
 
 	// Transports
 	_ "github.com/v2fly/v2ray-core/v5/transport/internet/domainsocket"
@@ -72,6 +75,8 @@ import (
 	_ "github.com/v2fly/v2ray-core/v5/transport/internet/request/roundtripper/httprt"
 
 	_ "github.com/v2fly/v2ray-core/v5/transport/internet/request/stereotype/meek"
+
+	_ "github.com/v2fly/v2ray-core/v5/transport/internet/httpupgrade"
 
 	// Transport headers
 	_ "github.com/v2fly/v2ray-core/v5/transport/internet/headers/http"
